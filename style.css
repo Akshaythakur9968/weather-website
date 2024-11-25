@@ -1,70 +1,65 @@
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-image: url(https://t4.ftcdn.net/jpg/07/55/97/01/360_F_755970185_91qfWqP2mMyjfIvWC0lnJQNtyWIXdB7H.jpg);
+body{
+    background-image: url(./beauty-of-nature-24.jpg);
     background-size: cover;
-    padding: 20px;
-    transition: background-image 1s ease-in-out, background-color 1s ease-in-out;
+    
 }
-h1{
-    margin-top: 0;
+button{
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.onClick1:hover{
+    background-color: rgb(0, 21, 255);
     color: white;
-    font-size: 35px;
-    font-weight: bolder;
-}
-p{
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-input {
-    padding: 10px;
-    width: 100px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    box-shadow: 8px 8px 30px black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 2em;
     transition: 0.2s;
 }
-button:hover {
-    background-color: #0056b3;
-    box-shadow: 5px 5px 15px black;
-}
-#weather-info {
-    margin-top: 20px;
-    padding: 0px;
-    /* background-color: #1eff0065; */
-    border-radius: 5px;
-    display: none;
-    width: 100%;
-}
-#weather-main{
-    
-    background-color: rgba(0, 0, 0, 0.452);
-    width: 300px;
-    margin-left: 100px;
-    margin: auto;
-    border-radius: 10px;
-}
-#weather-main p{
-    padding: 10px;
+.onClick2:hover{
+    background-color: rgb(255, 85, 0);
     color: white;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 2em;
+    transition: 0.2s;
 }
-
-#weather-main h2{
+.onClick3:hover{
+    background-color: rgb(0, 255, 123);
+    color: white;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 2em;
+    transition: 0.2s;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+#counter{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    }
+#counter p{
+    background-color: rgba(186, 186, 186, 0.575);
     padding: 10px;
-    color: black;
-    text-decoration: underline black;
-    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: 10px 10px 15px black;
     border-radius: 10px;
+    font-weight: bolder;
+}    
+.speed select{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 2em;
 }
-
+.speed{
+    display: flex;
+}
+.speed select:hover{
+    box-shadow: 10px 10px 15px black;
+    border-radius: 2em;
+    transition: 0.2s;
+}

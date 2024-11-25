@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app</title>
+    <title>click</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Weather Here</h1>
-    <p>Enter a city or country to get the current weather.</p>
-    <input type="text" id="location" placeholder="Enter city or country">
-    <button onclick="fetchWeather()">Get Weather</button>
-    
-    <div id="weather-info">
-        <div id="weather-main">
-            <h2>Weather Details</h2>
-            <p><strong>Location:</strong> <span id="location-name"></span></p>
-            <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
-            <p><strong>Condition:</strong> <span id="condition"></span></p>
-            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
-        </div>
-    </div>
 
+    <div id="counter"><p>Counter: 0</p></div>
+    <div class="speed">
+        <!-- <label for="speed"><p>Select Speed:</p></label> -->
+        <select id="speed">
+            <option value="none">Select Speed</option>
+            <option value="1000">1 Second</option>
+            <option value="500">0.5 Seconds</option>
+            <option value="200">0.2 Seconds</option>
+        </select>
+    </div>
+    <div>
+        <button class="onClick1" onclick="startCounter()">Start</button>
+        <button class="onClick2" onclick="pauseCounter()">Pause</button>
+        <button class="onClick3" onclick="resetCounter()">Reset</button>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>
